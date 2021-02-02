@@ -18,7 +18,7 @@
 // }
 
 // generateReadme function populating the README.md
-function generateMarkdown(answers) {
+function generateMarkdown(answers, userID) {
   return `
 <h1 align="center">${answers.projectTitle} 👋</h1>
 

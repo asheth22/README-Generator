@@ -3,6 +3,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js')
+// const gitAPI = require('./utils/api.js')
+const axios = require('axios');
 
 
 const promptUser = () =>
@@ -33,7 +35,7 @@ const promptUser = () =>
     },    
     {
       type: 'input',
-      name: 'contributin',
+      name: 'contributing',
       message: 'Who contrinuted to the project?s',
     },
     {
@@ -56,7 +58,18 @@ const promptUser = () =>
 
   ]);
 
+async function getUserinfo(user) {
+    console.log("trying to use axios"); 
+    try {
+        const response = await axios      
+      
+        .get(`https://api.github.com/users/${user}`);
+        return response.data;
 
+      } catch (error) {
+        console.log(error);
+      }
+  }
 
 // TODO: async function to initialize app
 async function init() {
@@ -65,9 +78,10 @@ async function init() {
   try {
     const answers = await promptUser();
     console.log(answers); 
-    // const userID = await getUser(userAnswers.githubUserName);
+    const userID = await getUserinfo(answers.githubUserName);
     // const readMe = generateMarkdown(userAnswers, userID);
-    const readMe = generateMarkdown(answers, 'asheth22');
+    console.log("Userd ID from axios: ", userID)  
+    const readMe = generateMarkdown(answers, userID);
     console.log("******************************")
     console.log(readMe); 
     await fs.writeFileSync("GeneratedREADME.md", readMe);

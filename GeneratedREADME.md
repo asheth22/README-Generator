@@ -1,10 +1,10 @@
 
 <h1 align="center">title 👋</h1>
 
-![badge](https://img.shields.io/badge/license--brightgreen)<br />
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
 
 ## Description
-🔍 De
+🔍 desc
 
 ## Table of Contents
 - [Description](#description)
@@ -16,18 +16,18 @@
 - [Questions](#questions)
 
 ## Installation
-💾 i
+💾 install
 
 ## Usage
-💻 app
+💻 use
 
 ## License
-![badge](https://img.shields.io/badge/license--brightgreen)
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 <br />
-This application is covered by the  license. 
+This application is covered by the MIT license. 
 
 ## Contributing
-👪 undefined
+👪 as
 
 ## Tests
 ✏️ test
@@ -37,7 +37,7 @@ This application is covered by the  license.
 <br />
 :octocat: Find me on GitHub: [asheth22](https://github.com/asheth22)<br />
 <br />
-✉️ Email me with any questions: xx@yy.com<br /><br />
+✉️ Email me with any questions: aa@nn.com<br /><br />
 
-_This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_
+_This README was generated with ❤️ by [README-generator]() 
   
