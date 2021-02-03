@@ -1,12 +1,11 @@
-// TODO: Include packages needed for this application
+//Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const generateMarkdown = require('./utils/generateMarkdown.js')
-// const gitAPI = require('./utils/api.js')
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const axios = require('axios');
 
-
+// Questions to be prompted to the user
 const promptUser = () =>
   inquirer.prompt([
     {
@@ -48,18 +47,17 @@ const promptUser = () =>
       message: 'Please select license from the list',
       name: 'license',
       choices: ['APache', 'BSD', 'MIT', 'GNU'],
-    },
-    
+    },    
     {
       type: 'input',
       name: 'email',
       message: 'What is your email',
     },
-
   ]);
 
+  // Obtain github user name using external API
 async function getUserinfo(user) {
-    console.log("trying to use axios"); 
+    
     try {
         const response = await axios      
       
@@ -71,7 +69,7 @@ async function getUserinfo(user) {
       }
   }
 
-// TODO: async function to initialize app
+// async function to initialize app
 async function init() {
   console.log("Ready to help you generate a README.ms file for your project!!");
 
