@@ -7,10 +7,10 @@ function generateMarkdown(answers, avatar) {
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Usage](#usage)-
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [License](#license)
 - [Questions](#questions)
 
 ## Description
@@ -22,21 +22,22 @@ function generateMarkdown(answers, avatar) {
 ## Usage
 💻 ${answers.usage}
 
-## License
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
-<br />
-This application is covered by the ${answers.license} license. 
-
 ## Contributing
 👪 ${answers.contributing}
 
 ## Tests
 ✏️ ${answers.test}
 
+## License
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+<br />
+This application is covered by the ${answers.license} license. 
+
 ## Questions
 ✋Have Questions? <br />
 <br />
-:octocat: Find me ${avatar}on GitHub: [${answers.githubUserName}](https://github.com/${answers.githubUserName})<br />
+![Developer Profile Picture](${avatar}) 
+:octocat: Find me on GitHub: [${answers.githubUserName}](https://github.com/${answers.githubUserName})<br />
 <br />
 ✉️ Email me with any questions: ${answers.email}<br /><br />
 

@@ -1,41 +1,42 @@
 
-<h1 align="center">title project 👋</h1>
+<h1 align="center">README Generator 👋</h1>
 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Usage](#usage)-
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [License](#license)
 - [Questions](#questions)
 
 ## Description
-🔍 desc
+🔍 This application creates a README file for your application
 
 ## Installation
-💾 install
+💾 install node.js
 
 ## Usage
-💻 use
-
-## License
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
-<br />
-This application is covered by the MIT license. 
+💻 Use this application to create a professional README file
 
 ## Contributing
-👪 anjali
+👪 Anjali
 
 ## Tests
-✏️ test
+✏️ test using "node indes.js" on command line
+
+## License
+![badge](https://img.shields.io/badge/license-BSD-brightgreen)
+<br />
+This application is covered by the BSD license. 
 
 ## Questions
 ✋Have Questions? <br />
 <br />
-:octocat: Find me https://avatars.githubusercontent.com/u/74203959?v=4on GitHub: [asheth22](https://github.com/asheth22)<br />
+![Developer Profile Picture](https://avatars.githubusercontent.com/u/74203959?v=4) 
+:octocat: Find me on GitHub: [asheth22](https://github.com/asheth22)<br />
 <br />
-✉️ Email me with any questions: aa@nn.com<br /><br />
+✉️ Email me with any questions: as@gmail.com<br /><br />
 
 _This README was generated with ❤️ by [README-generator]()
   
