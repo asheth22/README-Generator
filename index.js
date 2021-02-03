@@ -62,7 +62,8 @@ async function getUserinfo(user) {
         const response = await axios      
       
         .get(`https://api.github.com/users/${user}`);
-        return response.data;
+      return response.data;
+    
 
       } catch (error) {
         console.log(error);
@@ -76,10 +77,13 @@ async function init() {
   try {
     const answers = await promptUser();
     console.log(answers); 
-    const userID = await getUserinfo(answers.githubUserName);
+    const gitInfo = await getUserinfo(answers.githubUserName);
+    console.log("******************************")
+    console.log(gitInfo);
+    const avatar = gitInfo.avatar_url; 
     // const readMe = generateMarkdown(userAnswers, userID);
-    console.log("Userd ID from axios: ", userID)  
-    const readMe = generateMarkdown(answers, userID);
+    console.log("AvatarURLs: ", avatar)  
+    const readMe = generateMarkdown(answers, avatar);
     console.log("******************************")
     console.log(readMe); 
     await fs.writeFileSync("GeneratedREADME.md", readMe);

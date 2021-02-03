@@ -1,7 +1,5 @@
 
-<h1 align="center">README Generator 👋</h1>
-
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
+<h1 align="center">title project 👋</h1>
 
 ## Table of Contents
 - [Description](#description)
@@ -13,13 +11,13 @@
 - [Questions](#questions)
 
 ## Description
-🔍 This application prompts the user with questions about thier project and creates a professional README file
+🔍 desc
 
 ## Installation
-💾 install node.js 
+💾 install
 
 ## Usage
-💻 The application can be used to generate README file for any project complete with license badges
+💻 use
 
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
@@ -27,17 +25,17 @@
 This application is covered by the MIT license. 
 
 ## Contributing
-👪 Anjali Sheth
+👪 anjali
 
 ## Tests
-✏️ Application can be tested by using command "node index.js" from terminal
+✏️ test
 
 ## Questions
-✋ undefined<br />
+✋Have Questions? <br />
 <br />
-:octocat: Find me on GitHub: [asheth22](https://github.com/asheth22)<br />
+:octocat: Find me https://avatars.githubusercontent.com/u/74203959?v=4on GitHub: [asheth22](https://github.com/asheth22)<br />
 <br />
-✉️ Email me with any questions: asheth@xxx.com<br /><br />
+✉️ Email me with any questions: aa@nn.com<br /><br />
 
 _This README was generated with ❤️ by [README-generator]()
   
