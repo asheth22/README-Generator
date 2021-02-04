@@ -54,7 +54,7 @@ const promptUser = () =>
     },
   ]);
 
-  // Obtain github user name using external API
+  // Obtain github user info using external API
 async function getUserinfo(user) {
     
     try {
@@ -72,21 +72,15 @@ async function getUserinfo(user) {
 // async function to initialize app
 async function init() {
   console.log("Ready to help you generate a README.ms file for your project!!");
-
+// calling functions to get user respomses and github info
   try {
-    const answers = await promptUser();
-    console.log(answers); 
-    const gitInfo = await getUserinfo(answers.githubUserName);
-    console.log("******************************")
-    console.log(gitInfo);
-    const avatar = gitInfo.avatar_url; 
-    // const readMe = generateMarkdown(userAnswers, userID);
-    console.log("AvatarURLs: ", avatar)  
-    const readMe = generateMarkdown(answers, avatar);
-    console.log("******************************")
-    console.log(readMe); 
-    await fs.writeFileSync("GeneratedREADME.md", readMe);
-    console.log("README file is successfully created!");
+    const answers = await promptUser();    
+    const gitInfo = await getUserinfo(answers.githubUserName);   
+    const avatar = gitInfo.avatar_url;     
+    // calling function to generate and readme content and create file
+    const readMe = generateMarkdown(answers, avatar);    
+   const readMeFile =  await fs.writeFileSync("GeneratedREADME.md", readMe);
+   console.log("README file is successfully created!");
     
 }catch(err) {
     console.log(err);    

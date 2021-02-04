@@ -2,7 +2,7 @@
 // generateReadme function populating the README.md
 function generateMarkdown(answers, avatar) {
   return `
-<h1 align="center">${answers.projectTitle} 👋</h1>
+<h1 align="center">${answers.projectTitle} </h1>
 
 ## Table of Contents
 - [Description](#description)
